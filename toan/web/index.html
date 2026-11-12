@@ -19,9 +19,10 @@
   <script src="js/store.js"></script>
   <script src="js/grade.js"></script>
   <script>
-    // Nạp các file nội dung đã soạn (theo thứ tự, chạy được cả khi mở file:// trực tiếp)
+    // Nạp các file nội dung đã soạn (theo thứ tự, chạy được cả khi mở file:// trực tiếp).
+    // Chương có `dir` thì file nằm trong thư mục con: content/<dir>/<id>.js
     for (const ch of window.TOC) for (const u of ch.units)
-      if (u.ready) document.write('<script src="content/' + u.id + '.js"><\/script>');
+      if (u.ready) document.write('<script src="content/' + (ch.dir ? ch.dir + '/' : '') + u.id + '.js"><\/script>');
   </script>
   <script src="js/app.js"></script>
 </body>

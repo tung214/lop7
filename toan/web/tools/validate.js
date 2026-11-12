@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Kiểm tra nội dung: node tools/validate.js [file.js ...]   (mặc định: tất cả content/*.js trừ toc.js)
+// Kiểm tra nội dung: node tools/validate.js [file.js ...]   (mặc định: content/*.js và content/<thư mục chương>/*.js, trừ toc.js)
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
@@ -8,7 +8,19 @@ const katex = require('./node_modules/katex');
 const contentDir = path.join(__dirname, '..', 'content');
 let files = process.argv.slice(2);
 if (!files.length) {
-  files = fs.readdirSync(contentDir).filter(f => f.endsWith('.js') && f !== 'toc.js').map(f => path.join(contentDir, f));
+  const walk = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(d =>
+    d.isDirectory() ? walk(path.join(dir, d.name))
+      : d.name.endsWith('.js') && d.name !== 'toc.js' ? [path.join(dir, d.name)] : []);
+  files = walk(contentDir);
+}
+// Kiểm tra mục lục: file của mỗi bài ready nằm đúng chỗ (content/[dir/]id.js)
+if (process.argv.length <= 2) {
+  const tctx = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(contentDir, 'toc.js'), 'utf8'), tctx);
+  for (const ch of tctx.window.TOC) for (const u of ch.units) if (u.ready) {
+    const f = path.join(contentDir, ch.dir || '', u.id + '.js');
+    if (!fs.existsSync(f)) { console.log(`✗ toc.js: ${u.id} ready nhưng không có file ${path.relative(contentDir, f)}`); process.exitCode = 1; }
+  }
 }
 
 let errors = 0, warnings = 0;
@@ -102,4 +114,4 @@ for (const file of files) {
   }
 }
 console.log(`\nTổng: ${totalMcq} câu trắc nghiệm, ${totalEssay} câu tự luận — ${errors} lỗi, ${warnings} cảnh báo`);
-process.exit(errors ? 1 : 0);
+process.exit(errors || process.exitCode ? 1 : 0);

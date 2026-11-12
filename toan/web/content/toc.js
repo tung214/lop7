@@ -1,7 +1,8 @@
 // Mục lục Toán 7 – Tập 1 (Kết nối tri thức với cuộc sống)
-// `ready: true` = đã có file content/<id>.js. Khi soạn xong một bài, đổi thành true.
+// `ready: true` = đã có file nội dung. Khi soạn xong một bài, đổi thành true.
+// `dir`: thư mục con chứa file của chương (content/<dir>/<id>.js); không có `dir` thì file nằm ngay trong content/.
 window.TOC = [
-  { chapter: 1, title: "Chương I. Số hữu tỉ", units: [
+  { chapter: 1, title: "Chương I. Số hữu tỉ", dir: "c1", units: [
     { id: "c1-b01", title: "Bài 1. Tập hợp các số hữu tỉ", ready: true },
     { id: "c1-b02", title: "Bài 2. Cộng, trừ, nhân, chia số hữu tỉ", ready: true },
     { id: "c1-lt1", title: "Luyện tập chung (Bài 1–2)", ready: true },
@@ -10,14 +11,14 @@ window.TOC = [
     { id: "c1-lt2", title: "Luyện tập chung (Bài 3–4)", ready: true },
     { id: "c1-on",  title: "Ôn tập chương I", ready: true },
   ]},
-  { chapter: 2, title: "Chương II. Số thực", units: [
-    { id: "c2-b05", title: "Bài 5. Làm quen với số thập phân vô hạn tuần hoàn" },
-    { id: "c2-b06", title: "Bài 6. Số vô tỉ. Căn bậc hai số học" },
-    { id: "c2-b07", title: "Bài 7. Tập hợp các số thực" },
-    { id: "c2-lt1", title: "Luyện tập chung (Bài 5–7)" },
-    { id: "c2-on",  title: "Ôn tập chương II" },
+  { chapter: 2, title: "Chương II. Số thực", dir: "c2", units: [
+    { id: "c2-b05", title: "Bài 5. Làm quen với số thập phân vô hạn tuần hoàn", ready: true },
+    { id: "c2-b06", title: "Bài 6. Số vô tỉ. Căn bậc hai số học", ready: true },
+    { id: "c2-b07", title: "Bài 7. Tập hợp các số thực", ready: true },
+    { id: "c2-lt1", title: "Luyện tập chung (Bài 5–7)", ready: true },
+    { id: "c2-on",  title: "Ôn tập chương II", ready: true },
   ]},
-  { chapter: 3, title: "Chương III. Góc và đường thẳng song song", units: [
+  { chapter: 3, title: "Chương III. Góc và đường thẳng song song", dir: "c3", units: [
     { id: "c3-b08", title: "Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc" },
     { id: "c3-b09", title: "Bài 9. Hai đường thẳng song song và dấu hiệu nhận biết" },
     { id: "c3-lt1", title: "Luyện tập chung (Bài 8–9)" },
@@ -26,7 +27,7 @@ window.TOC = [
     { id: "c3-lt2", title: "Luyện tập chung (Bài 10–11)" },
     { id: "c3-on",  title: "Ôn tập chương III" },
   ]},
-  { chapter: 4, title: "Chương IV. Tam giác bằng nhau", units: [
+  { chapter: 4, title: "Chương IV. Tam giác bằng nhau", dir: "c4", units: [
     { id: "c4-b12", title: "Bài 12. Tổng các góc trong một tam giác" },
     { id: "c4-b13", title: "Bài 13. Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất" },
     { id: "c4-lt1", title: "Luyện tập chung (Bài 12–13)" },
@@ -37,7 +38,7 @@ window.TOC = [
     { id: "c4-lt3", title: "Luyện tập chung (Bài 15–16)" },
     { id: "c4-on",  title: "Ôn tập chương IV" },
   ]},
-  { chapter: 5, title: "Chương V. Thu thập và biểu diễn dữ liệu", units: [
+  { chapter: 5, title: "Chương V. Thu thập và biểu diễn dữ liệu", dir: "c5", units: [
     { id: "c5-b17", title: "Bài 17. Thu thập và phân loại dữ liệu" },
     { id: "c5-b18", title: "Bài 18. Biểu đồ hình quạt tròn" },
     { id: "c5-b19", title: "Bài 19. Biểu đồ đoạn thẳng" },

@@ -1,7 +1,11 @@
 # Định dạng file nội dung
 
-Mỗi đơn vị (bài học / luyện tập chung / ôn tập chương) là một file `content/<id>.js`, gọi `registerLesson({...})`.
-Thêm file mới thì khai báo id trong `content/toc.js` (danh sách file được nạp).
+Mỗi đơn vị (bài học / luyện tập chung / ôn tập chương) là một file `.js`, gọi `registerLesson({...})`.
+Thêm file mới thì khai báo id trong `content/toc.js` (danh sách file được nạp) và đổi `ready: true`.
+
+## Thư mục
+- **Mỗi chương một thư mục con** `content/c<chương>/`, ví dụ `content/c1/c1-b01.js`, `content/c2/c2-b05.js`.
+  Trong `toc.js`, chương đó khai báo `dir: "c2"` → app nạp `content/c2/<id>.js` (không có `dir` thì nạp `content/<id>.js`).
 
 ## Id
 - Bài học: `c1-b01`, `c1-b02`, … (`c<chương>-b<số bài 2 chữ số>`)
@@ -59,4 +63,4 @@ registerLesson({
 - Được dùng HTML đơn giản (`<b>`, `<br>`, `<ul><li>`, `<table>`) và SVG nội tuyến cho hình vẽ.
 - Id câu hỏi không trùng trong cùng một file.
 
-Kiểm tra: `node tools/validate.js` (báo lỗi định dạng, đáp án, công thức KaTeX hỏng).
+Kiểm tra: `node tools/validate.js` (quét cả các thư mục chương; báo lỗi định dạng, đáp án, công thức KaTeX hỏng, bài `ready` mà thiếu file).

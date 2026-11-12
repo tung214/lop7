@@ -60,9 +60,10 @@ lop7/toan/
   js/app.js  js/store.js  js/grade.js
   vendor/katex/…  vendor/chart.umd.min.js
   content/
-    toc.js               — mục lục: chương → bài, trang SGK
-    c1-b01.js … c5-b19.js — 19 bài học
-    c1-lt1.js, c1-cuoi.js … — 11 phần "Luyện tập chung" / "Bài tập cuối chương" (chỉ có bài tập, không có lý thuyết)
+    toc.js               — mục lục: chương → bài, trang SGK; chương có `dir` thì file nằm trong thư mục con đó
+    c1/c1-b01.js … c1/c1-on.js — Chương I
+    c2/c2-b05.js … c2/c2-on.js — Chương II (mỗi chương một thư mục con c<N>/)
+    (mỗi chương: các bài học + "Luyện tập chung" / "Ôn tập chương" chỉ có bài tập)
 ```
 Mục lục (đã đọc từ trang 4 SGK; trang PDF = trang sách + 1):
 - Chương I. Số hữu tỉ: Bài 1–4 (tr.5–25)
@@ -209,9 +210,9 @@ Trạng thái (chưa làm / đang làm / chờ chấm / hoàn thành / quá hạ
 ## Trạng thái (cập nhật 12/11/2026)
 - [x] Khung web: đăng nhập nhiều học sinh + PIN, học lý thuyết, làm bài (xáo đáp án, lưu nháp, chụp ảnh tự luận), kết quả + đáp án, Dashboard phụ huynh (tổng quan, giao bài, chấm bài, chấm AI, tiến độ + biểu đồ, học sinh, sao lưu), chế độ một máy + chế độ LAN (`server.py`). Hướng dẫn: `HUONG-DAN.md`.
 - [x] **Chương I** – 7 đơn vị (Bài 1–4, 2 Luyện tập chung, Ôn tập chương): 260 câu trắc nghiệm + 48 câu tự luận; đã soát đáp án độc lập.
-- [ ] Chương II – Số thực (Bài 5–7)
+- [x] **Chương II** – 5 đơn vị trong `web/content/c2/` (Bài 5–7, Luyện tập chung, Ôn tập chương): 186 câu trắc nghiệm + 33 câu tự luận; đã soát đáp án độc lập.
 - [ ] Chương III – Góc và đường thẳng song song (Bài 8–11)
 - [ ] Chương IV – Tam giác bằng nhau (Bài 12–16)
 - [ ] Chương V – Thu thập và biểu diễn dữ liệu (Bài 17–19)
 
-Thêm chương mới: tạo `web/content/<id>.js` theo `FORMAT.md`, đổi `ready: true` trong `web/content/toc.js`, chạy `node web/tools/validate.js`.
+Thêm chương mới: tạo thư mục `web/content/c<N>/`, các file `<id>.js` theo `FORMAT.md`; trong `web/content/toc.js` thêm `dir: "c<N>"` cho chương và đổi `ready: true`; chạy `node web/tools/validate.js`.

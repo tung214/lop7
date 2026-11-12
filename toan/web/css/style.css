@@ -133,6 +133,7 @@ input:focus, select:focus, textarea:focus, .btn:focus-visible { outline: 2px sol
 .theory table { border-collapse: collapse; margin: 8px 0; display: block; overflow-x: auto; }
 .theory td, .theory th { border: 1px solid var(--border); padding: 6px 10px; vertical-align: top; }
 .theory svg { max-width: 100%; height: auto; }
+.theory .katex svg { max-width: none; height: inherit; }   /* KaTeX vẽ dấu căn bằng SVG – không để quy tắc trên đè */
 details.example { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin: 8px 0; background: var(--surface-2); }
 details.example summary { cursor: pointer; font-weight: 600; }
 .skills li { margin-bottom: 6px; }
