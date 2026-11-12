@@ -51,4 +51,5 @@ Menu **Bài học** cho phụ huynh xem trước mọi đề kèm đáp án.
 
 ## Lưu ý
 - PIN chỉ để các con không vào nhầm/làm hộ nhau, **không phải bảo mật**.
-- Nội dung bài học nằm trong `web/content/` (định dạng xem `web/content/FORMAT.md`). Sửa xong chạy `node web/tools/validate.js` để kiểm tra.
+- Nội dung bài học nằm trong `web/content/` (định dạng xem `web/content/FORMAT.md`). Sửa xong chạy `node web/tools/validate.js` để kiểm tra (máy mới clone về: chạy `cd web/tools && npm install` một lần trước).
+- Dữ liệu cá nhân (`data/`, file sao lưu / chấm bài / gói giao bài) đã được `.gitignore` loại khỏi git. Muốn chuyển dữ liệu sang máy khác thì dùng Sao lưu → Khôi phục, không đẩy qua git.

@@ -1,0 +1,31 @@
+# ===== Dữ liệu cá nhân (PIN, bài làm, điểm, ảnh bài làm) — KHÔNG đẩy lên git =====
+# Dữ liệu chế độ LAN do server.py tạo (students.json chứa PIN, attempts.json chứa bài làm, uploads/ chứa ảnh)
+toan/data/
+**/data/*.json
+**/data/uploads/
+**/data/backup/
+
+# File xuất từ web (có thể chứa PIN / bài làm / điểm)
+# - sao lưu toàn bộ (Dashboard → Dữ liệu)
+toan7-saoluu-*.json
+# - bài chờ chấm gửi cho AI / kết quả AI chấm
+cham-bai-*.json
+ket-qua-cham*.json
+# - bài làm con gửi phụ huynh / gói giao bài (có PIN của con)
+bai-lam-*.json
+giao-bai-*.json
+
+# ===== Thư viện cài lại được: cd toan/web/tools && npm install =====
+node_modules/
+
+# ===== Rác hệ thống / editor =====
+__pycache__/
+*.py[cod]
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

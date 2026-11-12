@@ -1,0 +1,11 @@
+{
+  "name": "toan7-tools",
+  "private": true,
+  "description": "Công cụ kiểm tra nội dung: node validate.js",
+  "scripts": {
+    "validate": "node validate.js"
+  },
+  "dependencies": {
+    "katex": "0.16.11"
+  }
+}
