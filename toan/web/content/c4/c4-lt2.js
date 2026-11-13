@@ -238,7 +238,7 @@
           },
           {
             id: "d1q11", level: "kho", source: "SGK Bài 14 – BT 4.13 (biến đổi)",
-            q: "Hai đoạn thẳng $AC$ và $BD$ cắt nhau tại $O$ sao cho $OA = OC$, $OB = OD$ (hình vẽ). Có bao nhiêu cặp tam giác bằng nhau có chung đỉnh $O$?" +
+            q: "Hai đoạn thẳng $AC$ và $BD$ cắt nhau (không vuông góc) tại $O$ sao cho $OA = OC$, $OB = OD$ (hình vẽ). Có bao nhiêu cặp tam giác bằng nhau có chung đỉnh $O$?" +
               bowtie(["AC", "BD", "AB", "BC", "CD", "DA"]),
             options: ["$1$", "$2$", "$3$", "$4$"],
             answer: 1,

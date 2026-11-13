@@ -263,7 +263,7 @@
             "Mức tăng: $5{,}1 - 3{,}2 = 1{,}9$; $6{,}4 - 5{,}1 = 1{,}3$; $7{,}3 - 6{,}4 = 0{,}9$; $8 - 7{,}3 = 0{,}7$ (kg). Lớn nhất là $1{,}9$ kg, từ 0 đến 2 tháng tuổi (đoạn thẳng đầu tiên dốc nhất)."),
           mc("d1q10", "kho", "SGK tr.103 – Luyện tập 3",
             "Biểu đồ cho biết tỉ lệ học sinh đạt điểm giỏi môn Toán của hai lớp 7A, 7B qua 4 lần kiểm tra." + C3 + "Từ lần 1 đến lần 4, lớp nào có tỉ lệ học sinh giỏi tăng nhanh hơn?",
-            ["Lớp 7A (từ 30% lên 50%)", "Lớp 7B (từ 40% lên 44%)", "Lớp 7A (từ 35% lên 50%)", "Lớp 7B (từ 41% lên 44%)"], 0,
+            ["Lớp 7A (từ 30% lên 50%)", "Lớp 7B (từ 40% lên 44%)", "Hai lớp tăng như nhau", "Lớp 7B (từ 41% lên 44%)"], 0,
             "Lớp 7A tăng từ 30% lên 50%, thêm 20%; lớp 7B tăng từ 40% lên 44%, chỉ thêm 4%. Vậy lớp 7A tăng nhanh hơn (đường màu đỏ dốc hơn).")
         ],
         essay: [

@@ -134,7 +134,7 @@
         html: "<ul><li>Hai góc kề bù có tổng số đo bằng $180^\\circ$.</li>" +
           "<li>Hai góc đối đỉnh thì bằng nhau.</li>" +
           "<li>Tia phân giác $Ot$ của góc $xOy$: $\\widehat{xOt} = \\widehat{tOy} = \\frac{1}{2}\\widehat{xOy}$.</li>" +
-          "<li>Dấu hiệu nhận biết: nếu $c$ cắt $a, b$ tạo thành một cặp góc so le trong (hoặc đồng vị) bằng nhau thì $a \\parallel b$.</li>" +
+          "<li>Dấu hiệu nhận biết: nếu $c$ cắt $a$ và $b$ tạo thành một cặp góc so le trong (hoặc đồng vị) bằng nhau thì $a \\parallel b$.</li>" +
           "<li>Tiên đề Euclid: qua một điểm ở ngoài một đường thẳng chỉ có một đường thẳng song song với đường thẳng đó.</li>" +
           "<li>Nếu một đường thẳng cắt hai đường thẳng song song thì hai góc so le trong bằng nhau, hai góc đồng vị bằng nhau.</li>" +
           "<li>Hai đường thẳng phân biệt cùng vuông góc (hoặc cùng song song) với một đường thẳng thứ ba thì song song với nhau.</li></ul>"
@@ -223,10 +223,10 @@
           },
           {
             id: "d1q7", level: "vua", source: "SGK Bài 11 – BT 3.24",
-            q: "Định lí: “Hai đường thẳng phân biệt $a, b$ cùng vuông góc với đường thẳng $c$ thì $a \\parallel b$”. Giả thiết của định lí viết bằng kí hiệu là",
-            options: ["$a, b$ phân biệt; $a \\perp c$; $b \\perp c$", "$a \\parallel b$", "$a \\perp b$; $b \\perp c$", "$a \\parallel c$; $b \\parallel c$"],
+            q: "Định lí: “Hai đường thẳng phân biệt $a$ và $b$ cùng vuông góc với đường thẳng $c$ thì $a \\parallel b$”. Giả thiết của định lí viết bằng kí hiệu là",
+            options: ["$a$ và $b$ phân biệt; $a \\perp c$; $b \\perp c$", "$a \\parallel b$", "$a \\perp b$; $b \\perp c$", "$a \\parallel c$; $b \\parallel c$"],
             answer: 0,
-            explain: "Điều đã cho là: $a, b$ phân biệt, cùng vuông góc với $c$. Còn $a \\parallel b$ là kết luận."
+            explain: "Điều đã cho là: $a$ và $b$ phân biệt, cùng vuông góc với $c$. Còn $a \\parallel b$ là kết luận."
           },
           {
             id: "d1q8", level: "vua", source: "SGK tr.42 – Tập suy luận (góc đối đỉnh)",
@@ -295,10 +295,10 @@
           },
           {
             id: "d2q4", level: "de", source: "mới",
-            q: "Định lí: “Hai đường thẳng phân biệt $a, b$ cùng song song với đường thẳng $c$ thì $a \\parallel b$”. Giả thiết viết bằng kí hiệu là",
-            options: ["$a, b$ phân biệt; $a \\parallel c$; $b \\parallel c$", "$a \\parallel b$", "$a \\parallel c$; $a \\parallel b$", "$a, b$ phân biệt; $a \\perp c$; $b \\perp c$"],
+            q: "Định lí: “Hai đường thẳng phân biệt $a$ và $b$ cùng song song với đường thẳng $c$ thì $a \\parallel b$”. Giả thiết viết bằng kí hiệu là",
+            options: ["$a$ và $b$ phân biệt; $a \\parallel c$; $b \\parallel c$", "$a \\parallel b$", "$a \\parallel c$; $a \\parallel b$", "$a$ và $b$ phân biệt; $a \\perp c$; $b \\perp c$"],
             answer: 0,
-            explain: "Điều đã cho: $a, b$ phân biệt và cùng song song với $c$. Còn $a \\parallel b$ là kết luận."
+            explain: "Điều đã cho: $a$ và $b$ phân biệt và cùng song song với $c$. Còn $a \\parallel b$ là kết luận."
           },
           {
             id: "d2q5", level: "vua", source: "SGK tr.55–56",
@@ -383,10 +383,10 @@
           },
           {
             id: "d3q2", level: "de", source: "SBT Bài 11 – BT 3.28a",
-            q: "Giả thiết của định lí “Nếu hai đường thẳng $a, b$ cắt đường thẳng $c$ và trong các góc tạo thành có một cặp góc đồng vị bằng nhau thì $a \\parallel b$” là",
-            options: ["$a \\parallel b$", "$a, b$ cắt $c$ và tạo thành một cặp góc đồng vị bằng nhau", "$a \\perp c$ và $b \\perp c$", "$a$ và $b$ cắt nhau"],
+            q: "Giả thiết của định lí “Nếu hai đường thẳng $a$ và $b$ cắt đường thẳng $c$ và trong các góc tạo thành có một cặp góc đồng vị bằng nhau thì $a \\parallel b$” là",
+            options: ["$a \\parallel b$", "$a$ và $b$ cắt $c$ và tạo thành một cặp góc đồng vị bằng nhau", "$a \\perp c$ và $b \\perp c$", "$a$ và $b$ cắt nhau"],
             answer: 1,
-            explain: "Phần giữa “nếu” và “thì”: $a, b$ cắt $c$ tạo thành một cặp góc đồng vị bằng nhau. $a \\parallel b$ là kết luận."
+            explain: "Phần giữa “nếu” và “thì”: $a$ và $b$ cắt $c$ tạo thành một cặp góc đồng vị bằng nhau. $a \\parallel b$ là kết luận."
           },
           {
             id: "d3q3", level: "de", source: "SGK tr.56 – Luyện tập 1",
@@ -483,16 +483,16 @@
           {
             id: "d4q1", level: "vua", source: "mới",
             q: "Giả thiết (GT) và kết luận (KL) của định lí “Hai đường thẳng phân biệt cùng song song với một đường thẳng thứ ba thì chúng song song với nhau”, viết bằng kí hiệu, là",
-            options: ["GT: $a \\parallel b$; KL: $a \\parallel c$, $b \\parallel c$", "GT: $a, b$ phân biệt, $a \\parallel c$, $b \\parallel c$; KL: $a \\parallel b$", "GT: $a \\parallel c$; KL: $b \\parallel c$", "GT: $a, b$ phân biệt, $a \\perp c$, $b \\perp c$; KL: $a \\parallel b$"],
+            options: ["GT: $a \\parallel b$; KL: $a \\parallel c$, $b \\parallel c$", "GT: $a$ và $b$ phân biệt, $a \\parallel c$, $b \\parallel c$; KL: $a \\parallel b$", "GT: $a \\parallel c$; KL: $b \\parallel c$", "GT: $a$ và $b$ phân biệt, $a \\perp c$, $b \\perp c$; KL: $a \\parallel b$"],
             answer: 1,
-            explain: "Điều đã cho: $a, b$ phân biệt, $a \\parallel c$, $b \\parallel c$. Điều suy ra: $a \\parallel b$. Phương án cuối là định lí khác (cùng vuông góc)."
+            explain: "Điều đã cho: $a$ và $b$ phân biệt, $a \\parallel c$, $b \\parallel c$. Điều suy ra: $a \\parallel b$. Phương án cuối là định lí khác (cùng vuông góc)."
           },
           {
             id: "d4q2", level: "vua", source: "SGK Bài 11 – BT 3.24",
-            q: "Từ định lí “Nếu $a \\parallel b$ và $c \\perp a$ thì $c \\perp b$”, đổi chỗ “$a \\parallel b$” với “$c \\perp b$” ta được khẳng định “Nếu $c \\perp a$ và $c \\perp b$ thì $a \\parallel b$” (với $a, b$ là hai đường thẳng phân biệt). Khẳng định này",
+            q: "Từ định lí “Nếu $a \\parallel b$ và $c \\perp a$ thì $c \\perp b$”, đổi chỗ “$a \\parallel b$” với “$c \\perp b$” ta được khẳng định “Nếu $c \\perp a$ và $c \\perp b$ thì $a \\parallel b$” (với $a$ và $b$ là hai đường thẳng phân biệt). Khẳng định này",
             options: ["sai, vì khi đó $a$ và $b$ luôn cắt nhau", "không xác định được đúng hay sai", "sai, vì khi đó $c \\parallel a$", "đúng; đó là định lí về hai đường thẳng phân biệt cùng vuông góc với một đường thẳng thứ ba"],
             answer: 3,
-            explain: "$c$ cắt $a, b$ tạo thành các góc so le trong (hoặc đồng vị) cùng bằng $90^\\circ$, theo dấu hiệu nhận biết thì $a \\parallel b$. Đây là định lí đã học."
+            explain: "$c$ cắt $a$ và $b$ tạo thành các góc so le trong (hoặc đồng vị) cùng bằng $90^\\circ$, theo dấu hiệu nhận biết thì $a \\parallel b$. Đây là định lí đã học."
           },
           {
             id: "d4q3", level: "vua", source: "SGK tr.57 – Tranh luận",
@@ -541,7 +541,7 @@
             q: "Khẳng định “Nếu $a \\perp c$ và $b \\perp c$ thì $a \\parallel b$” chưa phải là một định lí. Cần thêm điều kiện nào vào giả thiết để được một định lí?",
             options: ["$a$ và $c$ phân biệt", "$a$ và $b$ phân biệt", "$a \\parallel c$", "$b$ cắt $a$"],
             answer: 1,
-            explain: "Nếu $a$ trùng $b$ thì vẫn có $a \\perp c$, $b \\perp c$ nhưng không nói $a \\parallel b$ được. Thêm “$a, b$ phân biệt” thì được định lí."
+            explain: "Nếu $a$ trùng $b$ thì vẫn có $a \\perp c$, $b \\perp c$ nhưng không nói $a \\parallel b$ được. Thêm “$a$ và $b$ phân biệt” thì được định lí."
           },
           {
             id: "d4q10", level: "kho", source: "mới",

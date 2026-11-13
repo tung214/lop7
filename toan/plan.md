@@ -211,8 +211,9 @@ Trạng thái (chưa làm / đang làm / chờ chấm / hoàn thành / quá hạ
 - [x] Khung web: đăng nhập nhiều học sinh + PIN, học lý thuyết, làm bài (xáo đáp án, lưu nháp, chụp ảnh tự luận), kết quả + đáp án, Dashboard phụ huynh (tổng quan, giao bài, chấm bài, chấm AI, tiến độ + biểu đồ, học sinh, sao lưu), chế độ một máy + chế độ LAN (`server.py`). Hướng dẫn: `HUONG-DAN.md`.
 - [x] **Chương I** – 7 đơn vị (Bài 1–4, 2 Luyện tập chung, Ôn tập chương): 260 câu trắc nghiệm + 48 câu tự luận; đã soát đáp án độc lập.
 - [x] **Chương II** – 5 đơn vị trong `web/content/c2/` (Bài 5–7, Luyện tập chung, Ôn tập chương): 186 câu trắc nghiệm + 33 câu tự luận; đã soát đáp án độc lập.
-- [ ] Chương III – Góc và đường thẳng song song (Bài 8–11)
-- [ ] Chương IV – Tam giác bằng nhau (Bài 12–16)
-- [ ] Chương V – Thu thập và biểu diễn dữ liệu (Bài 17–19)
+- [x] **Chương III** – 7 đơn vị trong `web/content/c3/` (Bài 8–11, 2 Luyện tập chung, Ôn tập chương), hình vẽ SVG; đã soát đáp án độc lập.
+- [x] **Chương IV** – 9 đơn vị trong `web/content/c4/` (Bài 12–16, 3 Luyện tập chung, Ôn tập chương), hình vẽ SVG; đã soát đáp án độc lập.
+- [x] **Chương V** – 5 đơn vị trong `web/content/c5/` (Bài 17–19, Luyện tập chung, Ôn tập chương), biểu đồ quạt / đoạn thẳng SVG; đã soát đáp án độc lập.
+- → **Toàn bộ Tập 1 đã có nội dung** (33 đơn vị).
 
 Thêm chương mới: tạo thư mục `web/content/c<N>/`, các file `<id>.js` theo `FORMAT.md`; trong `web/content/toc.js` thêm `dir: "c<N>"` cho chương và đổi `ready: true`; chạy `node web/tools/validate.js`.

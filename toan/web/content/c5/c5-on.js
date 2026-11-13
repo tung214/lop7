@@ -296,11 +296,11 @@
                "a) Dữ liệu về kết quả các lần thi thuộc loại nào?<br>b) Lần thi nào Hoa tiến bộ nhiều nhất so với lần ngay trước đó? Tiến bộ bao nhiêu phần trăm?<br>c) Nhận xét chung về sự tiến bộ của Hoa.",
             modelAnswer: "a) Kết quả là các con số (tỉ lệ phần trăm) nên là <b>số liệu</b>.<br>" +
                          "b) Mức tăng so với lần trước: lần 2: $50 - 40 = 10$; lần 3: $70 - 50 = 20$; lần 4: $80 - 70 = 10$; lần 5: $88 - 80 = 8$ (điểm phần trăm).<br>" +
-                         "Lần 3 tiến bộ nhiều nhất, tăng $20\\%$ so với lần 2.<br>" +
+                         "Lần 3 tiến bộ nhiều nhất, tăng $20$ điểm phần trăm so với lần 2.<br>" +
                          "c) Kết quả của Hoa <b>tăng liên tục</b> qua 5 lần (từ $40\\%$ lên $88\\%$), Hoa tiến bộ đều; các lần sau tăng chậm lại vì kết quả đã cao.",
             rubric: [
               { pts: 0.5, text: "Câu a: xác định đúng là số liệu." },
-              { pts: 0.5, text: "Câu b: tính các mức tăng và chỉ ra lần 3, tăng $20\\%$." },
+              { pts: 0.5, text: "Câu b: tính các mức tăng và chỉ ra lần 3, tăng $20$ điểm phần trăm." },
               { pts: 0.5, text: "Câu c: nhận xét đúng xu thế tăng liên tục." }
             ] },
           { id: "d2e2", level: "kho", source: "SGK Bài tập cuối chương V – BT 5.20 (biến đổi)", maxPoints: 1.5,

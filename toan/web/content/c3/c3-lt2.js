@@ -7,7 +7,7 @@
   var mv = function (p, d, len) { var e = u(d); return [p[0] + e[0] * len, p[1] + e[1] * len]; };
 
   function svg(w, h, body) {
-    return '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" style="max-width:320px;display:block;margin:6px auto" role="img" aria-label="Hình vẽ">' + body + '</svg>';
+    return '<svg viewBox="-14 -14 ' + (w + 28) + ' ' + (h + 28) + '" width="100%" style="max-width:320px;display:block;margin:6px auto" role="img" aria-label="Hình vẽ">' + body + '</svg>';
   }
   function L(p, q, red, dash) {
     return '<line x1="' + f(p[0]) + '" y1="' + f(p[1]) + '" x2="' + f(q[0]) + '" y2="' + f(q[1]) + '" stroke="' + (red ? RED : 'currentColor') + '" stroke-width="1.5"' + (dash ? ' stroke-dasharray="5 4"' : '') + '/>';

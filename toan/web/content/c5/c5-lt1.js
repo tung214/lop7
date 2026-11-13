@@ -335,7 +335,7 @@
             answer: 1,
             explain: "Biểu diễn các phần so với toàn thể (theo phần trăm) dùng biểu đồ hình quạt tròn." },
           { id: "d3q9", level: "vua", source: "SBT Bài 17",
-            q: "Bảng tỉ lệ học sinh chọn môn học yêu thích: Toán $35\\%$, Văn $25\\%$, Tiếng Anh $30\\%$, Môn khác $15\\%$. Khẳng định nào sau đây đúng?",
+            q: "Bảng tỉ lệ học sinh chọn môn học yêu thích (mỗi bạn chọn đúng một môn): Toán $35\\%$, Văn $25\\%$, Tiếng Anh $30\\%$, Môn khác $15\\%$. Khẳng định nào sau đây đúng?",
             options: ["Bảng hợp lí, Toán được chọn nhiều nhất", "Bảng hợp lí vì có đủ bốn môn", "Bảng chưa hợp lí vì tổng các tỉ lệ là $105\\%$", "Bảng chưa hợp lí vì Văn ít hơn Tiếng Anh"],
             answer: 2,
             explain: "$35 + 25 + 30 + 15 = 105 \\ne 100$, nên dữ liệu chưa hợp lí (mỗi bạn chỉ chọn một môn thì tổng phải là $100\\%$)." },

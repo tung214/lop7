@@ -5,7 +5,7 @@
   function f(n) { return (+n).toFixed(1); }
   function P(O, d, L) { return [O[0] + L * Math.cos(d * R), O[1] - L * Math.sin(d * R)]; }
   function svg(w, h, body) {
-    return '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" style="max-width:320px;display:block;margin:6px auto" role="img" aria-label="Hình vẽ">' + body + '</svg>';
+    return '<svg viewBox="-14 -14 ' + (w + 28) + ' ' + (h + 28) + '" width="100%" style="max-width:320px;display:block;margin:6px auto" role="img" aria-label="Hình vẽ">' + body + '</svg>';
   }
   function ln(p, q, dash) {
     return '<line x1="' + f(p[0]) + '" y1="' + f(p[1]) + '" x2="' + f(q[0]) + '" y2="' + f(q[1]) + '" stroke="currentColor" stroke-width="1.5"' + (dash ? ' stroke-dasharray="5 4"' : '') + '/>';

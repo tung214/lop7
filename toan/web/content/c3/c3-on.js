@@ -186,7 +186,7 @@
       },
       {
         q: "Cho hình vẽ, hai tia $Ax$, $By$ nằm trên hai đường thẳng song song, $\\widehat{xAC} = 45^\\circ$, $\\widehat{yBC} = 35^\\circ$. Tính $\\widehat{ACB}$." + zfig({ a: 45, b: 35, la: "45°", lb: "35°", lc: "?" }),
-        solution: "Qua $C$ kẻ tia $Ct$ song song với $Ax$ (cùng hướng với $Ax$). Vì $Ax \\parallel By$ nên $Ct \\parallel By$ (hai đường thẳng cùng song song với đường thẳng thứ ba).<br>" +
+        solution: "Qua $C$ kẻ tia $Ct$ song song với $Ax$ (ngược hướng với $Ax$, tức hướng sang trái, nằm trong góc $ACB$). Vì $Ax \\parallel By$ nên $Ct \\parallel By$ (hai đường thẳng cùng song song với đường thẳng thứ ba).<br>" +
           "$\\widehat{ACt} = \\widehat{xAC} = 45^\\circ$ (so le trong); $\\ \\widehat{BCt} = \\widehat{yBC} = 35^\\circ$ (so le trong).<br>" +
           "Tia $Ct$ nằm giữa hai tia $CA$, $CB$ nên $\\widehat{ACB} = 45^\\circ + 35^\\circ = 80^\\circ$."
       }
@@ -265,7 +265,7 @@
             q: "Cho hình vẽ, hai tia $Ax$, $By$ nằm trên hai đường thẳng song song, $\\widehat{xAC} = 40^\\circ$, $\\widehat{yBC} = 30^\\circ$. Số đo góc $ACB$ là" + zfig({ a: 40, b: 30, la: "40°", lb: "30°", lc: "?" }),
             options: ["$70^\\circ$", "$110^\\circ$", "$10^\\circ$", "$140^\\circ$"],
             answer: 0,
-            explain: "Qua $C$ kẻ tia $Ct$ song song và cùng hướng với $Ax$, khi đó $Ct \\parallel By$. Ta có $\\widehat{ACt} = \\widehat{xAC} = 40^\\circ$ và $\\widehat{BCt} = \\widehat{yBC} = 30^\\circ$ (so le trong). Vậy $\\widehat{ACB} = 40^\\circ + 30^\\circ = 70^\\circ$."
+            explain: "Qua $C$ kẻ tia $Ct$ song song và ngược hướng với $Ax$ (nằm trong góc $ACB$), khi đó $Ct \\parallel By$. Ta có $\\widehat{ACt} = \\widehat{xAC} = 40^\\circ$ và $\\widehat{BCt} = \\widehat{yBC} = 30^\\circ$ (so le trong). Vậy $\\widehat{ACB} = 40^\\circ + 30^\\circ = 70^\\circ$."
           },
           {
             id: "d1q11", level: "kho", source: "SGK Bài tập cuối chương III – BT 3.36",
@@ -388,7 +388,7 @@
             q: "Cho hình vẽ, hai tia $Ax$, $By$ nằm trên hai đường thẳng song song, $\\widehat{xAC} = 50^\\circ$, $\\widehat{ACB} = 85^\\circ$. Số đo góc $yBC$ là" + zfig({ a: 50, b: 35, la: "50°", lb: "?", lc: "85°" }),
             options: ["$45^\\circ$", "$50^\\circ$", "$130^\\circ$", "$35^\\circ$"],
             answer: 3,
-            explain: "Qua $C$ kẻ tia $Ct$ song song, cùng hướng với $Ax$ (khi đó $Ct \\parallel By$). Ta có $\\widehat{ACt} = \\widehat{xAC} = 50^\\circ$ (so le trong), nên $\\widehat{BCt} = 85^\\circ - 50^\\circ = 35^\\circ$. Mà $\\widehat{yBC} = \\widehat{BCt}$ (so le trong) nên $\\widehat{yBC} = 35^\\circ$."
+            explain: "Qua $C$ kẻ tia $Ct$ song song, ngược hướng với $Ax$ (nằm trong góc $ACB$; khi đó $Ct \\parallel By$). Ta có $\\widehat{ACt} = \\widehat{xAC} = 50^\\circ$ (so le trong), nên $\\widehat{BCt} = 85^\\circ - 50^\\circ = 35^\\circ$. Mà $\\widehat{yBC} = \\widehat{BCt}$ (so le trong) nên $\\widehat{yBC} = 35^\\circ$."
           }
         ],
         essay: [
@@ -522,7 +522,7 @@
             id: "d3e2", level: "kho", source: "SGK Bài tập cuối chương III – BT 3.34", maxPoints: 1.5,
             q: "Cho hình vẽ, hai tia $Ax$, $By$ nằm trên hai đường thẳng song song (cùng hướng sang phải), điểm $C$ nằm giữa hai đường thẳng đó. Chứng minh rằng $\\widehat{ACB} = \\widehat{xAC} + \\widehat{yBC}$." +
               zfig({ a: 40, b: 35, la: "", lb: "", lc: "" }),
-            modelAnswer: "Qua $C$ kẻ tia $Ct$ song song với $Ax$ và cùng hướng với $Ax$ (tia $Ct$ nằm giữa $CA$ và $CB$).<br>" +
+            modelAnswer: "Qua $C$ kẻ tia $Ct$ song song với $Ax$ và ngược hướng với $Ax$ (tia $Ct$ nằm giữa $CA$ và $CB$).<br>" +
               "Vì $Ax \\parallel By$ và $Ct \\parallel Ax$ nên $Ct \\parallel By$ (hai đường thẳng cùng song song với đường thẳng thứ ba).<br>" +
               "Với cát tuyến $AC$: $\\widehat{ACt} = \\widehat{xAC}$ (so le trong). Với cát tuyến $BC$: $\\widehat{BCt} = \\widehat{yBC}$ (so le trong).<br>" +
               "Do $Ct$ nằm giữa $CA$ và $CB$: $\\widehat{ACB} = \\widehat{ACt} + \\widehat{BCt} = \\widehat{xAC} + \\widehat{yBC}$.",
